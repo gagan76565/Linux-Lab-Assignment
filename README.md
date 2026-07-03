@@ -2,7 +2,7 @@
 
 ## Student Details
 
-- Name: Your Name
+- Name: I.Gagan
 - Course: Linux Modules 1–4 Lab Assignment
 
 ## Repository Structure
