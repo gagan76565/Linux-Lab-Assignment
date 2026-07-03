@@ -1,0 +1,49 @@
+Comparison Between Hard Link and Symbolic Link
+
+Hard Link:
+- Shares the same inode as the original file.
+- Continues to work after the original filename is deleted.
+- Cannot normally span different file systems.
+
+Symbolic Link:
+- Has its own inode.
+- Stores the path to the original file.
+- Becomes broken if the original file is deleted.
+- Can point to files on different file systems.
+
+Effect of Deleting Original File
+
+The hard link continued to provide access to the file because it shares the same inode as the original. The symbolic link became invalid because it pointed to a file path that no longer existed.
+
+Conclusion
+
+This experiment demonstrates the difference between hard links and symbolic links. Hard links reference the actual file data, while symbolic links reference the file p
+========== File System and Link Analysis Report ==========
+
+Inode Numbers:
+1089 Commands.md
+1088 Link_Analysis_Report.txt
+ 995 Outputs
+ 990 Screenshots
+3322 hardlink.txt
+3323 softlink.txt
+
+Metadata (Hard Link):
+  File: hardlink.txt
+  Size: 22        	Blocks: 8          IO Block: 4096   regular file
+Device: 8,48	Inode: 3322        Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/  igagan)   Gid: ( 1000/  igagan)
+Access: 2026-07-03 16:24:32.250383174 +0000
+Modify: 2026-07-03 16:22:16.531298880 +0000
+Change: 2026-07-03 16:24:15.152143901 +0000
+ Birth: 2026-07-03 16:22:16.531298880 +0000
+
+Metadata (Symbolic Link):
+  File: softlink.txt -> original.txt
+  Size: 12        	Blocks: 0          IO Block: 4096   symbolic link
+Device: 8,48	Inode: 3323        Links: 1
+Access: (0777/lrwxrwxrwx)  Uid: ( 1000/  igagan)   Gid: ( 1000/  igagan)
+Access: 2026-07-03 16:23:12.081381642 +0000
+Modify: 2026-07-03 16:23:07.033127971 +0000
+Change: 2026-07-03 16:23:07.033127971 +0000
+ Birth: 2026-07-03 16:23:07.033127971 +0000

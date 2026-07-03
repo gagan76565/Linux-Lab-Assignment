@@ -1,0 +1,46 @@
+========== File Access and I/O Investigation Report ==========
+
+Open Files:
+
+File Descriptors:
+total 0
+lrwx------ 1 igagan igagan 64 Jul  3 16:29 0 -> /dev/pts/0
+l-wx------ 1 igagan igagan 64 Jul  3 16:29 1 -> /home/igagan/Linux-Lab-Assignment/Question4/IO_Investigation_Report.txt
+lrwx------ 1 igagan igagan 64 Jul  3 16:31 10 -> /dev/pts/0
+lrwx------ 1 igagan igagan 64 Jul  3 16:29 2 -> /dev/pts/0
+lrwx------ 1 igagan igagan 64 Jul  3 16:29 255 -> /dev/pts/0
+
+Resource Limits:
+real-time non-blocking time  (microseconds, -R) unlimited
+core file size              (blocks, -c) 0
+data seg size               (kbytes, -d) unlimited
+scheduling priority                 (-e) 0
+file size                   (blocks, -f) unlimited
+pending signals                     (-i) 63099
+max locked memory           (kbytes, -l) 65536
+max memory size             (kbytes, -m) unlimited
+open files                          (-n) 10240
+pipe size                (512 bytes, -p) 8
+POSIX message queues         (bytes, -q) 819200
+real-time priority                  (-r) 0
+stack size                  (kbytes, -s) 8192
+cpu time                   (seconds, -t) unlimited
+max user processes                  (-u) 63099
+virtual memory              (kbytes, -v) unlimited
+file locks                          (-x) unlimited
+
+Output Redirection:
+total 12
+-rw-r--r-- 1 igagan igagan    0 Jul  3 16:28 Commands.md
+-rw-r--r-- 1 igagan igagan    0 Jul  3 16:28 IO_Investigation_Report.txt
+drwxr-xr-x 2 igagan igagan 4096 Jul  3 16:04 Outputs
+drwxr-xr-x 2 igagan igagan 4096 Jul  3 16:04 Screenshots
+-rw-r--r-- 1 igagan igagan    0 Jul  3 16:30 output.txt
+-rw-r--r-- 1 igagan igagan   28 Jul  3 16:29 sample.log
+
+Error Redirection:
+ls: cannot access 'invalidfile': No such file or directory
+
+Combined Output:
+ls: cannot access 'invalidfile': No such file or directory
+sample.log

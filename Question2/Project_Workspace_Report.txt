@@ -1,0 +1,29 @@
+========== Secure Project Workspace Report =========Explanation of Permission Protection
+
+The Documents and Backup directories were assigned permission 700 so that only the owner can access them. The Source directory was assigned permission 750 to allow the owner full access and the group read and execute permissions. These permission settings help protect project files from unauthorized access and accidental modification.
+Explanation of Permission Protection
+
+The Documents and Backup directories were assigned permission 700 so that only the owner can access them. The Source directory was assigned permission 750 to allow the owner full access and the group read and execute permissions. These permission settings help protect project files from unauthorized access and accidental modification.=
+
+Directory Structure:
+.
+./Documents
+./Documents/plan.txt
+./Source
+./Source/main.c
+./Backup
+./Backup/backup.txt
+
+Current User:
+igagan
+
+Umask:
+0022
+
+Directory Permissions:
+drwx------ 2 igagan igagan 4096 Jul  3 16:15 Backup
+drwx------ 2 igagan igagan 4096 Jul  3 16:15 Documents
+drwxr-x--- 2 igagan igagan 4096 Jul  3 16:15 Source
+
+Ownership:
+drwxr-xr-x 5 igagan igagan 4096 Jul  3 16:14 .

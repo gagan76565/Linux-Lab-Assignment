@@ -1,0 +1,2 @@
+ls: cannot access 'invalidfile': No such file or directory
+sample.log
